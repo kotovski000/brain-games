@@ -22,5 +22,7 @@
 1. **Установка golangci-lint**: `go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest`
 2. **Запуск линтера**: `golangci-lint run ` или через makefile `make lint`
 
+
+## Значок Maintainability
 [![Maintainability](https://api.codeclimate.com/v1/badges/79c532d89c61e77fc4f4/maintainability)](https://codeclimate.com/github/kotovski000/brain-games/maintainability)
 
