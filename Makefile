@@ -3,4 +3,8 @@ install-lint:
 
 lint: install-lint
 	@echo "Running linter..."
-	@golangci-lint run
+	@if golangci-lint run; then \
+		echo "Linting successful!"; \
+	else \
+		exit 1; \
+	fi

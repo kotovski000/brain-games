@@ -12,7 +12,10 @@ func main() {
 	fmt.Print("Your choice: ")
 
 	var choice int
-	fmt.Scanln(&choice)
+	if _, err := fmt.Scanln(&choice); err != nil {
+		fmt.Printf("Error reading input: %v\n", err)
+		return
+	}
 
 	switch choice {
 	case 1:
